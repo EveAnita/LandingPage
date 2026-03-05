@@ -253,3 +253,24 @@ top: 20%;
 #clientes:hover .coments{
     visibility: visible;
 }
+
+@media (max-width:475px) {
+    ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    #clientes{
+      display: flex;
+        flex-direction: column;
+
+        & img{
+            width:100px;
+            height:100px;
+        }
+        & .coments{
+            width:100px;
+            height:100px;
+        }
+    }
+
+}
