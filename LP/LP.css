@@ -8,23 +8,16 @@
 }
 
  body{
-    background-color: #362015;
-    height: 150vh;
+     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #8a5337;
+    height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
  }
 #menu{
     color: white;
-    font-family: 'Poppins', sans-serif;
-    background-color:#362015;
-}
-#icon{
-    position: absolute;
-    top: -24px;
-    left: 15px;
-    width: 100px;
-    margin: 0 auto;
-    padding:0 auto;
+    background-color:rgb(241, 237, 237);
 }
 
 li, ul{
@@ -36,68 +29,82 @@ li, ul{
 }
 a {
     padding: 0px;
-    color: white;
-    font-size: larger;
-    font-weight: bolder;
+    color: black;
+    font-size: 1.7rem;
     text-decoration: none;
-    
 }
 a:hover{
-    font-size: x-large;
-    font-weight: bolder;
+    font-size: 1.9rem;
     text-decoration: underline;
     margin: 0%;
 }
  
 .titulo{
     color: white;
-    text-size-adjust: 50px;
     text-align: center;
-    margin: 17px;
-    font-family: 'Poppins',sans-serif;
-    font-weight: bolder;
+    font-size: 4rem;
+    margin: 10px;
+    font-weight: 500;
 }
 
 #sobre{
     background-size: cover;
     background-attachment: fixed;
     background-image: url(img/Bakery.jpg);
-    width: auto; 
-    height: 250px;
+    width: 870px; 
+    height: 350px;
+    border-radius: 15px;
     margin: 0 auto;
     position: relative;
-    top: 10%;
+    top: 5%;
 }
 .history{
     color: white;
-    right: 26%;
+    right: 22%;
+    font-size: 1.6rem;
+}
+.encomenda{
+    display: 
+    inline-block;
+    font-size: 1rem;
+    background-color: #cb9b43;
+    padding: 10px 30px;
+    position: relative;
+    bottom: 5rem;
+    left: 10rem;
+
 }
  .texto {
-    width: 250px;
-    box-sizing: border-box;
-    margin-top: 30px;
-    background-color: blur;
+    width: 370px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.705);
     border: 1px solid black;
-    color: white;
+    color:black;
     visibility: visible;
-    text-transform:  capitalize;
-    margin: 10px;
-    padding: 3px;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    font-size: 1.2rem;
     border-radius: 5px;
     position: relative;
-    left: 15%;
+    left: 12%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
-#Chef{
-    width: 250px;
-    height: 250px;
+.img{
     position: relative;
-    left: 60%;
-    top: -250px;
+    bottom: 107px;
+}
+#Chef{
+    transform: rotate(100deg);
+    width: 290px;
+    height: 290px;
+    position: relative;
+    left: 65%;
+    top: -230px;
     z-index: 1;
 }
 .bolha{
-    background-color: #56010c;
+    background-color: #cb9b43;
     width: 220px;
     height: 220px;
     position: relative;
@@ -107,7 +114,7 @@ a:hover{
      color: white;
 }
 .bolha2{
-    background-color: #56010c;
+    background-color: #cb9b43;
     width: 110px;
     height: 110px;
     position: relative;
@@ -118,30 +125,29 @@ a:hover{
 }
 #Demonstrações{
     position: relative;
-    top: 20%;
+    top: 25%;
 }
 h3{
     position: relative;
     color: White;
+    font-size: 1.5rem;
     left: 7%;
+    top:-46px;
 }
 #demonstration{
     visibility: visible;
     text-align: center;
-    margin: 10 auto;
     position: absolute;
-    margin-left: 15px;
 }
+
 ul li{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 6px;
     height: 50%;
     position: relative;
     left: 59px;
-
 }
 li img{
     border-radius: 15px;
@@ -150,25 +156,26 @@ li img{
     margin-top: 40px;
     justify-content: center;
     align-items: center;
-
 }
-.card{
+ .card{
+     display: inline-block;
      transition: transform 0.5s;
      right: 6%;
     visibility: hidden;
     border-radius: 5px;
 }
 
+h1, .card{ 
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    color: black;
+}
 h2, .card{
     text-align: center;
     position: relative;
     bottom: 10px;
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
-}
-h1, .card{
-    margin: 5px;
- font-family: 'Times New Roman', Times, serif;
- color: black;
 }
 span, button{
     display: inline-block;
@@ -178,6 +185,7 @@ span, button{
     text-align: center;
 }
 span{
+    display: block;
     left: 6px;
     gap: 5px;
     position: relative;
@@ -186,14 +194,14 @@ span{
 button{
     gap: 5px;
     left: 5px;
-    padding:5px;
+    padding:10px 15px;
     border-radius: 5px;
-    border: #7a594d;
-    background-color: #7a594d;
+    border: #cb9b43;
+    background-color: #cb9b43;
     color: white;
     font-weight: bold;
 }
- li:hover .card{
+li:hover .card{
     transition: transform 0.8s linear;
     transform: rotatez(360deg) translateX(-50px) ;
     background-color:#f0f3f5;
@@ -213,14 +221,15 @@ h4{
 }
 #Evaluations{
 position: relative;
-top: 20%;
 }
 #clientes  {
+    transform: 0.5s linear;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    bottom: 102px;
     gap: 30px;
 }
 #clientes img{
@@ -231,45 +240,126 @@ top: 20%;
     top: 0; /*A imagem começa do ponto zero*/
     position: absolute;
 }
-#clientes:hover{
+#clientes:hover {
     scale: 0.50px;
     top: -100px; /*A imagem sobe 100%*/
     height: 500px;
-
 }
 .coments {
+     transform: 0.5s linear;
     border-radius:60px 10px 30px;
     width: 180px;
     height: 180px;
+    font-size: 1.1rem;
      text-align: center; /*para que o texto fique no centro da div */
      padding-top: 50px; /*para que o texto fique em baixo da imagem  */
     gap: 50px;
+    top: -30px;
     background-color: #f0f3f5;
-    transition: 0.5s;
     visibility: hidden;
     position: relative;
 }
 
 #clientes:hover .coments{
-    visibility: visible;
+ visibility: visible;
 }
 
-@media (max-width:475px) {
+@media (max-width:425px) {
+    #menu{
+        display: flex;
+
+    & a{
+        font-size: medium;
+
+        & a:hover{
+            font-size: medium;
+            
+        }
+    }
+   }
+
+    #sobre{
+         width: 450px;
+
+        & .history{
+             z-index: 1;
+             left: 2px;
+             display: flex;
+             position: relative;
+        }
+            & .texto{
+            display: flex;
+            position: relative;
+             left: 2%;
+             margin: 0;
+            }
+           & #Chef{
+                left: 50%;
+                 left: 45%;
+            }
+           & .bolha{
+                width: 160px;
+                height: 160px;
+                top: -506px;
+                left: 60%;
+                position: relative;
+            }
+            & .bolha2{
+                left: 55%;
+                width: 110px;
+                height: 110px;
+                top: -485px;
+                position: relative;
+            }
+        
+    }
+    #Demonstrações{
+    position: relative;
+    display: flex;
+
     ul li{
         display: flex;
         flex-direction: column;
+        left: 0;
+        gap: 0;
     }
-    #clientes{
-      display: flex;
-        flex-direction: column;
+    
+     .card{
+        background-color:#f0f3f5;
+        height: 230px;
+        width: 193px;
+        visibility: visible;
+        position: relative;
+        left: 100px;
+        bottom: 250px;
+    }
+    
+     .namagashi, .dango, .mochi{
+        position: relative;
+        bottom: 200px;
+    }
 
-        & img{
+    li:hover .card{
+    transform: none;
+    transition: none;
+    }
+}
+    #clientes{
+      
+
+         .cliente-1 img, .cliente-2 img, .cliente-3 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+         .coments{
             width:100px;
             height:100px;
         }
-        & .coments{
-            width:100px;
-            height:100px;
+        &:hover .coments{
+        visibility: visible;
+        transition: none;
+        transform: none;
         }
     }
 
